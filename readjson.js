@@ -1,5 +1,3 @@
-autowatch = 1;
-
 outlets = 2;
 
 evaluate.local = 1;
@@ -16,10 +14,8 @@ function readjson(s)
 
 	var _str = "";
 	if (f.isopen) {
-		i=0;
 		while (a=f.readline()) { // returns a string
 			_str += a;
-			i++;
 		}
 		outlet(1, 1);
 		data = evaluate(_str);
