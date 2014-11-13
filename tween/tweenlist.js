@@ -2,6 +2,7 @@ inlets =1;
 outlets =1;
 
 var target = [];
+var current = [];
 var pre = [];
 
 function tween(){
@@ -15,7 +16,7 @@ function tween(){
 		}
 
 	} else {
-		pre = target;
+		pre = current;
 	}
 	target = a;
 }
@@ -28,6 +29,7 @@ function rate(val){
 		var x = (target[i] - pre[i]) * val + pre[i];
 		a.push(x);
 	}
+	current = a;
 	outlet(0, a);
 }
 
