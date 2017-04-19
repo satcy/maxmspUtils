@@ -1,4 +1,4 @@
-outlets = 2;
+outlets = 3;
 
 evaluate.local = 1;
 function evaluate(json){
@@ -17,11 +17,11 @@ function readjson(s)
 		while (a=f.readline()) { // returns a string
 			_str += a;
 		}
-		outlet(1, 1);
+		outlet(2, 1);
 		data = evaluate(_str);
 		f.close();
 	} else {
-		outlet(1, 0);
+		outlet(2, 0);
 	}
 }
 
@@ -36,6 +36,7 @@ function getdata(){
 			val = val[a[i]];
 		}
 	}
+	outlet(1, a);
 	outlet(0, val);
 }
 
