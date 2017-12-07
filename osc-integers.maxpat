@@ -392,7 +392,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 787.0, 378.0, 547.0, 22.0 ],
 					"style" : "",
-					"text" : "script newdefault $1 bpatcher indexflonum.maxpat @args $2 @patching_position $3 0 @orderfront 1"
+					"text" : "script newdefault $1 bpatcher indexintnum.maxpat @args $2 @patching_position $3 0 @orderfront 1"
 				}
 
 			}
